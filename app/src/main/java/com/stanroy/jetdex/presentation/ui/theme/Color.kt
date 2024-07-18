@@ -1,4 +1,4 @@
-package com.stanroy.jetdex.ui.theme
+package com.stanroy.jetdex.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

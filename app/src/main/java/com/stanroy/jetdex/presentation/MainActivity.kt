@@ -1,4 +1,4 @@
-package com.stanroy.jetdex
+package com.stanroy.jetdex.presentation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,13 +12,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.stanroy.jetdex.ui.theme.JetDexTheme
+import com.stanroy.jetdex.presentation.ui.theme.JetDexTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         installSplashScreen()
+
+        super.onCreate(savedInstanceState)
+
+        enableEdgeToEdge()
+
         setContent {
             JetDexTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
